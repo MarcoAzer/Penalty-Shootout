@@ -48,7 +48,7 @@ Next we can build a specific project. Navigate to **project** and run the follow
 ## User interface
 * Use the arrow keys to set the direction of the ball
 * Use the slider to control the initial speed of the ball
-* Press `space` to "kick" the ball
+* Press `space` to `kick` the ball
 * Press `s` after taking a shot to switch players
 * Press `g` for `GodMode`
    * Use arrow keys, `+` and `-` to translate view
