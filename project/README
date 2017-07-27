@@ -1,0 +1,16 @@
+# Compilation:
+* ```premake4 gmake```
+* ```make```
+* ```./A5```
+
+# Objectives
+     1. Modelling a scene
+     2. User Interface --- use arrow keys to aim the ball, space bar to shoot the ball and UI to control initial speed, wind and lighting
+     3. Texture mapping --- flags of countries playing and score
+     4. Bump mapping --- soccer field and brick wall
+     5. Animation --- using key frame and Linear Spline Interpolation. Goalie is moving his arms and legs to save the ball
+     6. Synchronized sound --- when ball is "kicked", hit goalie and net, went into net, and fly away
+     7. Static collision --- collision with post or static goalie
+     8. Dynamic collision --- collision with a moving goalie
+     9. Physics engine --- for the projectile motion of the ball. The physics variables are Initial speed, initial direction, gravity, and wind vector.
+     10. Reflector map --- Skybox
