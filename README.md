@@ -1,4 +1,9 @@
-# CS488 Fall 2015 Project Code
+# Penalty Shootout
+
+---
+
+## Description
+Penalty shootout game as the project for CS488 ( Computer Graphics ). All the libraries and the framework are provided by the course staff. I implemented everything in `project/` except `SceneNode`, `JointNode`, `GeometryNode` and `scene_lua`, however, I adjusted the classes to achieve new features. 
 
 ---
 
@@ -20,10 +25,6 @@
 ---
 
 ## Building Projects
-We use **premake4** as our cross-platform build system. First you will need to build all
-the static libraries that the projects depend on. To build the libraries, open up a
-terminal, and **cd** to the top level of the CS488 project directory and then run the
-following:
 
     $ premake4 gmake
     $ make
@@ -34,19 +35,21 @@ folder of your cs488 project directory.
 * libglfw3.a
 * libimgui.a
 
-Next we can build a specific project.  To do this, **cd** into one of the project folders,
-say **A0** for example, and run the following terminal commands in order to compile the A0 executable using all .cpp files in the A0 directory:
+Next we can build a specific project. Navigate to **project** and run the following commands
 
-    $ cd A0/
+    $ cd project/
     $ premake4 gmake
     $ make
+    
+## Run project
 
-
-----
-
-## Windows
-Sorry for all of the hardcore Microsoft fans out there.  We have not had time to test the build system on Windows yet. Currently our build steps work for OSX and Linux, but all the steps should be the same on Windows, except you will need different libraries to link against when building your project executables.  Some good news is that premake4 can output a Visual Studio .sln file by running:
-
-    $ premake4 vs2013
-
- This should point you in the general direction.
+    $ ./project
+    
+## User interface
+* Use the arrow keys to set the direction of the ball
+* Use the slider to control the initial speed of the ball
+* Press `space` to "kick" the ball
+* Press 's' after taking a shot to switch players
+* Press 'g' for `GodMode`
+   * Use arrow keys, `+` and `-` to translate view
+   * Use `w`, `s`, `a`, and `d` to rotate the view
